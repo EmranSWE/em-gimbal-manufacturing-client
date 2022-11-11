@@ -1,0 +1,33 @@
+.main-text{
+    color: red;
+}
+.homeBg{
+
+    background-image: url('./Assets/gimbal-main.jpg');
+    background-color: #cccccc;
+    height: auto;
+    width: auto;   
+}
+
+.fullGimbal{
+
+    background-image: url('./Assets/frank-zhang-9AWoTUcNZAE-unsplash.jpg');
+    background-color: #cccccc;
+    height: auto;
+    width: auto;   
+}
+.fullLastGimbal{
+
+    background-image: url('./Assets/black-camera-with-gimbal.jpg');
+    background-color: #cccccc;
+    height: auto;
+    width: auto;   
+}
+
+
+.btnSecondary{
+   background-color:  #fa6401;
+}
+.btnAccent{
+    background-color:#08fdd8 ;
+}

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Menubar = () => {
     return (
         <div>
-            <div class="navbar ">
+            <div class="navbar">
                 <div class="navbar-start ml-20">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">

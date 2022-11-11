@@ -6,7 +6,7 @@ import HomeLastSection from './HomeLastSection';
 const Home = () => {
     return (
         <div>
-            <div class="hero min-h-screen homeBg" >
+            <div class="hero min-h-screen homeBg" > 
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content  text-neutral-content">
                     <div class="max-w-md">

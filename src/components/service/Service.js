@@ -8,13 +8,13 @@ import service5 from '../../Assets/service5.jpg';
 const Service = () => {
     return (
         <div>
-            <div class="hero min-h-screen fullLastGimbal">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content  text-neutral-content">
-                    <div class="max-w-lg">
-                        <h1 class="mb-5 text-4xl font-bold">The whole gimbal is <br /> splashproof</h1>
-                        <p class="mb-5">The gimbal is with the design of splashproof, making shooting freely</p>
-                        <button class="btn btnSecondary border-0 p-5 my-3">Buy Now!</button>
+            <div className="hero min-h-screen fullLastGimbal">
+                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-content  text-neutral-content">
+                    <div className="max-w-lg">
+                        <h1 className="mb-5 text-4xl font-bold">The whole gimbal is <br /> splashproof</h1>
+                        <p className="mb-5">The gimbal is with the design of splashproof, making shooting freely</p>
+                        <button className="btn btnSecondary border-0 p-5 my-3">Buy Now!</button>
                     </div>
                 </div>
             </div>
@@ -27,12 +27,12 @@ const Service = () => {
             </div>
             <div className='hero'>
                 <div className="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Q8mpxPkutT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/VxYDRfriW9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Q8mpxPkutT0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/VxYDRfriW9I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                 </div>
             </div>
             <div className='text-center my-3 rounded'>
-                <button class="btn btnSecondary border-0 p-5 my-3">Buy Now!</button>
+                <button className="btn btnSecondary border-0 p-5 my-3">Buy Now!</button>
             </div>
 
             <div className='hero'>
@@ -100,12 +100,12 @@ const Service = () => {
                 </div>
             </div>
 
-            <div class="hero min-h-screen bg-base-200 ">
-                <div class="hero-content grid lg:grid-cols-2 sm:grid-cols-1 justify-items-center gap-8">
-                    {/* <img src={bluetooth} class="max-w-full rounded " alt='integrated bluetooth' /> */}
+            <div className="hero min-h-screen bg-base-200 ">
+                <div className="hero-content grid lg:grid-cols-2 sm:grid-cols-1 justify-items-center gap-8">
+                    {/* <img src={bluetooth} className="max-w-full rounded " alt='integrated bluetooth' /> */}
 
                     <div>
-                        <h1 class="text-5xl font-bold my-3">CALL Us or Fill the
+                        <h1 className="text-5xl font-bold my-3">CALL Us or Fill the
                             <br /> FORM</h1>
                         <div className='flex'>
                             <div>
@@ -127,42 +127,42 @@ const Service = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div class="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
-                        <div class="card-body">
+                    <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
+                        <div className="card-body">
                             <div className='flex'>
-                                <div class="form-control mr-3">
-                                    <label class="label">
-                                        <span class="label-text">Name</span>
+                                <div className="form-control mr-3">
+                                    <label className="label">
+                                        <span className="label-text">Name</span>
                                     </label>
-                                    <input type="text" placeholder="Name" class="input input-bordered" />
+                                    <input type="text" placeholder="Name" className="input input-bordered" />
                                 </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Company</span>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Company</span>
                                     </label>
-                                    <input type="text" placeholder="Company" class="input input-bordered" />
+                                    <input type="text" placeholder="Company" className="input input-bordered" />
                                 </div>
                             </div>
                             <div className='flex'>
-                                <div class="form-control mr-3">
-                                    <label class="label">
-                                        <span class="label-text">Email</span>
+                                <div className="form-control mr-3">
+                                    <label className="label">
+                                        <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" placeholder="Email Address" class="input input-bordered" />
+                                    <input type="email" placeholder="Email Address" className="input input-bordered" />
                                 </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Phone</span>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Phone</span>
                                     </label>
-                                    <input type="text" placeholder="phone" class="input input-bordered" />
+                                    <input type="text" placeholder="phone" className="input input-bordered" />
                                 </div>
                             </div>
 
                             <div>
-                                <textarea class="textarea border-2 border-accent w-full" placeholder="How can we help you" type='text' ></textarea>
+                                <textarea className="textarea border-2 border-accent w-full" placeholder="How can we help you" type='text' ></textarea>
                             </div>
-                            <div class="form-control mt-6">
-                                <button class="btn btnSecondary border-0">Submit</button>
+                            <div className="form-control mt-6">
+                                <button className="btn btnSecondary border-0">Submit</button>
                             </div>
                         </div>
                     </div>

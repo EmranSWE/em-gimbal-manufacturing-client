@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import  gimbal  from '../../Assets/home2.jpg'
+import  gimbal  from '../../Assets/home2.jpg';
+import 'animate.css'
 const Home2 = () => {
     return (
         <div>
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content grid lg:grid-cols-2 sm:grid-cols-1 justify-items-center">
-                <img src={ gimbal } class="max-w-full  " alt=' gimbal '/>
+            <div className="hero min-h-screen bg-base-200">
+                <div className="hero-content grid lg:grid-cols-2 sm:grid-cols-1 justify-items-center">
+                <img src={ gimbal } className="max-w-full  " alt=' gimbal '/>
 
                     <div>
-                        <h1 class="text-5xl font-bold text-5xl">Manufacturer
+                        <h1 className="text-5xl font-bold text-5xl animate__animated  animate__slower animate__repeat-3 animate__backInRight">Manufacturer
                             <br /> 3-Axis Gimbal</h1>
-                        <p class="py-6">With 3-Axis there is more flexibility in the angles you shoot. 320° Pan/Tilt rotation lets you get the desired angle with smooth footage.</p>
-                        <button class="btn btnSecondary border-0"><Link to='/about'>Read More</Link></button>
+                        <p className="py-6">With 3-Axis there is more flexibility in the angles you shoot. 320° Pan/Tilt rotation lets you get the desired angle with smooth footage.</p>
+                        <button className="btn btnSecondary border-0 animate__animated  animate__slower animate__backInRight"><Link to='/about'>Read More</Link></button>
                     </div>
                 </div>
             </div>

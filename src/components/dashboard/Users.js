@@ -1,0 +1,50 @@
+import React from 'react';
+import { useQuery } from 'react-query';
+import Loading from '../shared/Loading';
+import AllUsers from './AllUsers';
+
+const Users = () => {
+    const { isLoading, error, data:users,refetch} = useQuery({
+        queryKey: ['users'],
+        queryFn: () =>
+          fetch('http://localhost:5000/users',{
+            method:"GET",
+            headers:{
+                'authorization':`Bearer ${localStorage.getItem('accessToken')}`
+            }
+          }).then(res =>
+            res.json()
+          )
+      })
+    if(isLoading){
+        return <Loading></Loading>
+    }
+   
+    return (
+        <div>
+            <h2>My purchase :{users.length}</h2>
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {
+                        users.map((user,index) => 
+                            <AllUsers key={user.id} user={user} index={index} refetch={refetch}></AllUsers>
+                        )
+                       }
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+};
+
+export default Users;

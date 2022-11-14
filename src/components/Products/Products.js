@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../shared/Loading';
 import SingleProduct from './SingleProduct';
@@ -14,17 +14,16 @@ const Products = () => {
       if(isLoading){
         return <Loading></Loading>
       }
-      console.log(products)
     return (
         <div>
             <div className='hero'>
             <div className='grid grid-cols-3 gap-6'>
                 {
                     products.map(product => <SingleProduct key={product._id}
-                    product={product}></SingleProduct>)
+                    product={product} ></SingleProduct>)
                 }
             </div>
-            </div>
+            </div> 
            
         </div>
     );

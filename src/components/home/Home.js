@@ -28,8 +28,8 @@ const Home = () => {
             {/* Homepage section 2 */}
             <Home2></Home2>
             {/* Product Section */}
-                <h1 className='text-5xl text-center text-secondary font-bold'>Our Products</h1>
-            <Products></Products>
+                {/* <h1 className='text-5xl text-center text-secondary font-bold'>Our Products</h1>
+            <Products></Products> */}
           
             <HomePage3></HomePage3>
             <HomeLastSection></HomeLastSection>

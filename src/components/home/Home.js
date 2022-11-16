@@ -11,8 +11,8 @@ const Home = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content  text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-6xl font-bold animate__animated  animate__slower animate__repeat-1 animate__zoomInRight">EM Action <br /> Gimbal</h1>
-                        <p className="mb-5 text-3xl  animate__animated  animate__slower animate__repeat-3 animate__headShake">All of the action, non of the shakes</p>
+                        <h1 className="mb-5 text-6xl font-bold ">EM Action <br /> Gimbal</h1>
+                        <p className="mb-5 text-3xl  ">All of the action, non of the shakes</p>
                         <p className='text-2xl'>
                             5 Modes | Bluetooth Control |
                         </p>
@@ -28,8 +28,8 @@ const Home = () => {
             {/* Homepage section 2 */}
             <Home2></Home2>
             {/* Product Section */}
-                {/* <h1 className='text-5xl text-center text-secondary font-bold'>Our Products</h1>
-            <Products></Products> */}
+                <h1 className='text-5xl text-center text-secondary font-bold'>Our Products</h1>
+            <Products></Products>
           
             <HomePage3></HomePage3>
             <HomeLastSection></HomeLastSection>

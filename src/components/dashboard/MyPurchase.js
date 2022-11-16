@@ -11,7 +11,7 @@ const MyPurchase = () => {
     const navigate =useNavigate();
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/purchase?user=${user.email}`,{
+            fetch(`https://infinite-waters-78594.herokuapp.com/purchase?user=${user.email}`,{
                  method:'GET',
                  headers:{
                     'authorization':`Bearer ${localStorage.getItem('accessToken')}`

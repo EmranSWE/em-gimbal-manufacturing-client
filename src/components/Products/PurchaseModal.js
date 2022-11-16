@@ -23,7 +23,7 @@ const PurchaseModal = ({product,setProduct}) => {
             phone:phone
         }
 
-        fetch('http://localhost:5000/purchase',{
+        fetch('https://infinite-waters-78594.herokuapp.com/purchase',{
             method:"POST",
             headers:{
                 'content-type':"application/json"

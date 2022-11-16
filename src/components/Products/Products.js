@@ -7,7 +7,11 @@ const Products = () => {
     const {data:products,isLoading}=useQuery({
         queryKey: ['product'],
         queryFn: () =>
-          fetch('http://localhost:5000/products').then(res =>
+          fetch('http://localhost:5000/products',{
+              headers:{
+                  authorization: `Bearer ${localStorage.getItem('accessToken')}`
+              }
+          }).then(res =>
             res.json()
           )
       });
@@ -19,7 +23,7 @@ const Products = () => {
             <div className='hero'>
             <div className='grid grid-cols-3 gap-6'>
                 {
-                    products.map(product => <SingleProduct key={product._id}
+                    products?.map(product => <SingleProduct key={product._id}
                     product={product} ></SingleProduct>)
                 }
             </div>

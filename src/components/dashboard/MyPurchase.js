@@ -2,6 +2,7 @@ import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyPurchase = () => {
@@ -28,12 +29,12 @@ const MyPurchase = () => {
                 .then(data => {
                     setPurchase(data)})
         }
-    }, [user])
+    }, [user,navigate])
     return (
         <div>
             <h2>My purchase :{purchase.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -41,6 +42,7 @@ const MyPurchase = () => {
                             <th>Product</th>
                             <th>Email</th>
                             <th>Price</th>
+                            <th>Payment</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -52,6 +54,12 @@ const MyPurchase = () => {
                             <td>{p.productName}</td>
                             <td>{p.userEmail}</td>
                             <td>{p.price}</td>
+                            <td>{(p.price && !p.paid) && <Link to={`/dashboard/payment/${p._id}`}><button className='btn btn-primary btn-xs'>Pay</button></Link> }
+                            {(p.price && p.paid) && <>
+                                
+                                <p><span className='text-primary font-bold text-green-500'>Paid</span></p>
+                                <p>Transaction Id: <span className='text-green-500'>{p.transactionId}</span> </p></> }
+                            </td>
                         </tr>
                         )
                        }

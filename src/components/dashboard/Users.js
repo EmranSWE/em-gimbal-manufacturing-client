@@ -4,7 +4,7 @@ import Loading from '../shared/Loading';
 import AllUsers from './AllUsers';
 
 const Users = () => {
-    const { isLoading, error, data:users,refetch} = useQuery({
+    const { isLoading,  data:users,refetch} = useQuery({
         queryKey: ['users'],
         queryFn: () =>
           fetch('http://localhost:5000/users',{
@@ -23,8 +23,8 @@ const Users = () => {
     return (
         <div>
             <h2>My purchase :{users.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -36,7 +36,7 @@ const Users = () => {
                     <tbody>
                        {
                         users.map((user,index) => 
-                            <AllUsers key={user.id} user={user} index={index} refetch={refetch}></AllUsers>
+                            <AllUsers key={user._id} user={user} index={index} refetch={refetch}></AllUsers>
                         )
                        }
                        

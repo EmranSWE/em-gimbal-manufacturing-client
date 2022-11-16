@@ -21,6 +21,8 @@ import Users from './components/dashboard/Users';
 import RequireAdmin from './components/Login/RequireAdmin';
 import MyProfile from './components/dashboard/MyProfile';
 import AddProduct from './components/dashboard/AddProduct';
+import ManageProducts from './components/dashboard/ManageProducts';
+import Payment from './components/dashboard/Payment';
 
 function App() {
   return (
@@ -46,9 +48,11 @@ function App() {
       <Route index element={<MyPurchase></MyPurchase>}></Route>   
       <Route path='review' element={<MyReview></MyReview>}></Route>     
       <Route path='profile' element={<MyProfile></MyProfile>}></Route>     
-      <Route path='history' element={<MyHistory></MyHistory>}></Route>     
+      <Route path='history' element={<MyHistory></MyHistory>}></Route> 
+      <Route path='payment/:id' element={<Payment></Payment>}></Route>      
       <Route path='users' element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>     
       <Route path='addproduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>     
+      <Route path='manageProducts' element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>     
        </Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>

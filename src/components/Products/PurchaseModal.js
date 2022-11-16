@@ -42,22 +42,22 @@ const PurchaseModal = ({product,setProduct}) => {
     }
     return (
         <div>
-            <input type="checkbox" id="product-purchase" class="modal-toggle" />
-            <div class="modal">
-                <div class="modal-box ">
+            <input type="checkbox" id="product-purchase" className="modal-toggle" />
+            <div className="modal">
+                <div className="modal-box ">
                     <h2>Buy: {name}</h2>
-                    <label for="product-purchase" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <label htmlFor="product-purchase" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-4 justify-center p-6'>
-                         <input placeholder={name} name='pName' type="text" class="input input-bordered w-full max-w-xs" />
-                        <input value={user?.displayName || ''} disabled name='Name' type="text" class="input input-bordered w-full max-w-xs" />
+                         <input placeholder={name} name='pName' type="text" className="input input-bordered w-full max-w-xs" />
+                        <input value={user?.displayName || ''} disabled name='Name' type="text" className="input input-bordered w-full max-w-xs" />
                    
-                    <input value={user?.email || ''} disabled name='email'  type="email" class="input input-bordered w-full max-w-xs" />
-                    <input placeholder='Phone' name='phone'  type="phone" class="input input-bordered w-full max-w-xs" />
-                    <input placeholder={minimumOrder} name='minimum' type="text" class="input input-bordered w-full max-w-xs" />
-                    <input placeholder={availabeOrder} name='available' type="text" class="input input-bordered w-full max-w-xs" />
+                    <input value={user?.email || ''} disabled name='email'  type="email" className="input input-bordered w-full max-w-xs" />
+                    <input placeholder='Phone' name='phone'  type="phone" className="input input-bordered w-full max-w-xs" />
+                    <input placeholder={minimumOrder} name='minimum' type="text" className="input input-bordered w-full max-w-xs" />
+                    <input placeholder={availabeOrder} name='available' type="text" className="input input-bordered w-full max-w-xs" />
                     <label >Price</label>
-                    <input placeholder={price} name='price' type="text" class="input input-bordered w-full max-w-xs" />
-                    <input  type="submit" value='Submit' class="btn btn-secondary w-full max-w-xs" />
+                    <input placeholder={price} name='price' type="text" className="input input-bordered w-full max-w-xs" />
+                    <input  type="submit" value='Submit' className="btn btn-secondary w-full max-w-xs" />
                     </form>
                    
                 </div>

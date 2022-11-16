@@ -10,9 +10,9 @@ const HomePage3 = () => {
                 <p className='text-center text-xl'>A 3-axis stabilization system completely integrated with the camera cancels out your movements </p><p className='text-center text-xl'>in three directions so it stays still even if your hands shake or wobble. This is the first time this technology is available in a camera you can hold.</p>
             </div>
             <div className='hero'>
-                <div className="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Q8mpxPkutT0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
-                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/VxYDRfriW9I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 justify-items-center">
+                    <div><iframe width="360" height="315" src="https://www.youtube.com/embed/Q8mpxPkutT0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                    <div><iframe width="360" height="315" src="https://www.youtube.com/embed/VxYDRfriW9I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                 </div>
             </div>
             <div className='text-center my-5'> <button className="btn btnSecondary border-0  my-3 ">Buy Now!</button></div>

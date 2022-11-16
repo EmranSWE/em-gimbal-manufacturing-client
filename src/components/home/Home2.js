@@ -10,10 +10,10 @@ const Home2 = () => {
                 <img src={ gimbal } className="max-w-full  " alt=' gimbal '/>
 
                     <div>
-                        <h1 className="text-5xl font-bold text-5xl animate__animated  animate__slower animate__repeat-3 animate__backInRight">Manufacturer
+                        <h1 className="text-5xl font-bold  ">Manufacturer
                             <br /> 3-Axis Gimbal</h1>
                         <p className="py-6">With 3-Axis there is more flexibility in the angles you shoot. 320° Pan/Tilt rotation lets you get the desired angle with smooth footage.</p>
-                        <button className="btn btnSecondary border-0 animate__animated  animate__slower animate__backInRight"><Link to='/about'>Read More</Link></button>
+                        <button className="btn btnSecondary border-0 "><Link to='/about'>Read More</Link></button>
                     </div>
                 </div>
             </div>

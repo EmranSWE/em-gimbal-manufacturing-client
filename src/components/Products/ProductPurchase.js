@@ -16,8 +16,8 @@ const ProductPurchase = () => {
             .then(data => setProducts(data))
     }, [id])
     const [user, loading] = useAuthState(auth);
-    const { _id, name, image,  availableOrder, price } = products;
-
+    const { _id, name, image,  availableOrder, price ,minimumOrder} = products;
+   
     if(loading){
         return <Loading></Loading>
     };
@@ -25,10 +25,11 @@ const ProductPurchase = () => {
     const handleSubmit = event => {
         event.preventDefault();
         const quantity = event.target.quantity.value;
+        if(quantity > minimumOrder ){
         const phone = event.target.phone.value;
         const address = event.target.address.value;
        const totalPrice=quantity*price;
-   
+       
         const purchase = {
             productId: _id,
             productName: name,
@@ -38,7 +39,7 @@ const ProductPurchase = () => {
             userName: user?.displayName,
             userEmail: user?.email,
             phone: phone,
-            address:address
+            address:address,
         }
 
         fetch('https://infinite-waters-78594.herokuapp.com/purchase', {
@@ -54,7 +55,10 @@ const ProductPurchase = () => {
                     toast.success("Order Purchase");
                     navigate('/shop')
                 }
-            })
+            })}
+            else{
+                toast.error("Quantity is less than minimum order")
+            }
     }
     return (
         <div>
@@ -95,17 +99,11 @@ const ProductPurchase = () => {
                                 <label className="label">
                                     <span className="label-text">Product Quantity</span>
                                 </label>
-                                <input type="text" name='quantity' placeholder="Product Quantity" className="input input-bordered" />
+                                <input type="text" placeholder={minimumOrder}  name='quantity' required  className="input input-bordered" />
                             </div>
-                            {/* <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="email" name='email' placeholder="email" className="input input-bordered" />
-                            </div> */}
-                           
+                        
                             <div className="form-control mt-6">
-                                <input type='submit' value='submit' className="btn btn-primary"/>
+                                <input type='submit' value='submit'  className="btn btn-primary"/>
                             </div>
 
                             </form>

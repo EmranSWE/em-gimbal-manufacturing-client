@@ -11,7 +11,7 @@ const HomeLastSection = () => {
                        <div>
                        <h1 className="mb-5 text-7xl font-bold">6-8 Hours <br /> Battery Life</h1>
                         <p className="mb-5 text-xl">The gimbal is with the design of splashproof, making shooting freely</p>
-                        <button className="btn btnSecondary border-0 p-5 my-3">Buy Now!</button>
+                        <button className="btn btnSecondary border-0 my-3"> <Link to='/about'>Learn More</Link></button>
                        </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const HomeLastSection = () => {
             </div>
 
             <div className='btnSecondary p-14'>
-                <h1 className='text-center text-4xl text-white'><button className='btn btn-outline text-white p-5'><Link>Buy Now</Link></button></h1>
+                <h1 className='text-center text-4xl text-white'><button className='btn btn-outline text-white p-5'><Link to='/shop'>Buy Now</Link></button></h1>
             </div>
 
         </div>

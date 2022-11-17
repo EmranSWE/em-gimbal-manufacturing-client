@@ -4,6 +4,7 @@ import Home2 from './Home2';
 import HomePage3 from './HomePage3';
 import HomeLastSection from './HomeLastSection';
 import Products from '../Products/Products';
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div>
@@ -20,7 +21,7 @@ const Home = () => {
                         6-8 Hours Battery | 3 = Axis
                         </p>
                         
-                        <button className="btn btnSecondary  my-3">Buy Now!</button>
+                        <button className="btn btnSecondary  my-3"> <Link to='/shop'>Buy Now</Link></button>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@stripe/react-stripe-js": "^1.15.0",
     "@stripe/stripe-js": "^1.44.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.0",
     "react-hook-form": "^7.39.3",
+    "react-icons": "^4.6.0",
     "react-query": "^3.39.2",
     "react-router": "^6.4.3",
     "react-router-dom": "^6.4.3",

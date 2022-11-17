@@ -15,7 +15,7 @@ const HomePage3 = () => {
                     <div><iframe width="360" height="315" src="https://www.youtube.com/embed/VxYDRfriW9I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                 </div>
             </div>
-            <div className='text-center my-5'> <button className="btn btnSecondary border-0  my-3 ">Buy Now!</button></div>
+            <div className='text-center my-5'> <button className="btn btnSecondary border-0 my-3"> <Link to='/about'>Learn More</Link></button></div>
 
 
             {/*  */}
@@ -25,7 +25,7 @@ const HomePage3 = () => {
                     <div className="max-w-lg">
                         <h1 className="mb-5 text-4xl font-bold">The whole gimbal is <br /> splashproof</h1>
                         <p className="mb-5">The gimbal is with the design of splashproof, making shooting freely</p>
-                        <button className="btn btnSecondary border-0 p-5 my-3">Buy Now!</button>
+                        <button className="btn btnSecondary border-0 my-3"> <Link to='/about'>Read More</Link></button>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ const HomePage3 = () => {
                     <img src={bluetooth} className="max-w-full rounded " alt='integrated bluetooth'/>
 
                     <div>
-                        <h1 className="text-5xl font-bold text-5xl">Integrated
+                        <h1 className="text-5xl font-bold">Integrated
                             <br /> Bluetooth</h1>
                         <p className="py-6">Easily connect to one of the compatible YI action cameras using the integrated Bluetooth Low Energy (BLE) 4.0, just turn on bluetooth on your camera, press the gimbal's shutter button and you're ready to go.</p>
                         <button className="btn btnSecondary border-0"><Link to='/about'>Read More</Link></button>

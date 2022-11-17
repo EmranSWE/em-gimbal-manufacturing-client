@@ -18,7 +18,7 @@ const ManageSingleProducts = ({ product, index,setDeletingProduct }) => {
             <td>{availableOrder}</td>
             <td>{minimumOrder}</td>
             <td>
-            <label onClick={()=>setDeletingProduct(product)} htmlFor="confirmed-delete-doctor" className="btn btn-xs btn-accent"> Delete</label>
+            <label onClick={()=>setDeletingProduct(product)} htmlFor="confirmed-delete-product" className="btn btn-xs btn-accent"> Delete</label>
             </td>
         </tr>
 

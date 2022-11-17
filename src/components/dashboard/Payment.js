@@ -20,25 +20,21 @@ const Payment = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
-            <div className="card w-50 max-w-md bg-base-100 shadow-xl">
+        <div className='grid grid-cols-1 gap-14'>
+            <div className=" lg:ml-10 max-w-md bg-base-100 shadow-xl rounded-lg">
                 <div className="card-body">
                     <h1 className='text-2xl text-primary'>Hello,{purchase.userName}</h1>
 
                     <h2 className="card-title">Pay for {purchase.productName}</h2>
                     <p>Please pay for <span>${purchase.price}</span> </p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
+                    
                 </div>
             </div>
-            <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl">
+            <div className="card lg:ml-10 flex-shrink-0 w-50 max-w-md shadow-2xl">
                 <div className="card-body">
                     <Elements stripe={stripePromise}>
                         <CheckoutForm purchase={purchase}/>
                     </Elements>
-
-
                 </div>
             </div>
         </div>

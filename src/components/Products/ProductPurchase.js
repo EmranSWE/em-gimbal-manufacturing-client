@@ -57,15 +57,16 @@ const ProductPurchase = () => {
                 }
             })}
             else{
-                toast.error("Quantity is less than minimum order")
+                toast.error("Please Provide More Than Required Quantity")
             }
     }
     return (
-        <div>
-            <h1 className='text-5xl text-center text-purple-400'>Please Purchase Now|</h1>
+        <div >
+            <h1 className='text-5xl text-center text-accent '>Please Purchase Now!</h1>
             <div className="hero">
-                <div className="hero-content grid grid-cols-2">
-                    <div className=" text-center lg:text-left">
+                <div className="hero-content grid lg:grid-cols-2 sm:grid-cols-1">
+                    <div className="  ">
+                    <p>Product Name:{name}</p>
                        <img src={image} className='w-52'   alt="product" />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
@@ -103,7 +104,7 @@ const ProductPurchase = () => {
                             </div>
                         
                             <div className="form-control mt-6">
-                                <input type='submit' value='submit'  className="btn btn-primary"/>
+                                <input type='submit' value='Place Order'  className="btn btn-accent"/>
                             </div>
 
                             </form>

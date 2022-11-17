@@ -24,6 +24,16 @@
     width: auto;   
 }
 
+.purchaseBg{
+
+    background-image: url('./Assets/black-camera-with-gimbal.jpg');
+    background-color: #cccccc;
+    height: auto;
+    width: auto; 
+    z-index: -1;
+    opacity: 0.5;
+}
+
 
 .btnSecondary{
    background-color:  #fa6401;

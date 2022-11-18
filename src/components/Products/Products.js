@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../shared/Loading';
+import ProductPagination from './ProductPagination';
 import SingleProduct from './SingleProduct';
 
 const Products = () => {
+    const [currentPage,setCurrentPage]=useState(1);
+    const [postsPerPage,setPostsPerPage]=useState(6);
+    
     const {data:products,isLoading}=useQuery({
         queryKey: ['product'],
         queryFn: () =>
@@ -15,17 +19,26 @@ const Products = () => {
             res.json()
           )
       });
+      const lastPostIndex= currentPage * postsPerPage;
+      const firstPostIndex= lastPostIndex - postsPerPage;
+    
+
       if(isLoading){
         return <Loading></Loading>
       }
+      const currentPost= products?.slice(firstPostIndex,lastPostIndex);
+    //   console.log(products.slice(2,5))
     return (
         <div>
             <div className='hero'>
             <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4'>
                 {
-                    products?.map(product => <SingleProduct key={product._id}
+                    currentPost?.map(product => <SingleProduct key={product._id}
                     product={product} ></SingleProduct>)
-                }
+                }       
+               <div className='col-span-3 justify-items-center '>
+               <ProductPagination currentPage={currentPage} totalPosts={products.length} postsPerPage={postsPerPage} setCurrentPage={setCurrentPage}></ProductPagination>
+               </div>
             </div>
             </div> 
            

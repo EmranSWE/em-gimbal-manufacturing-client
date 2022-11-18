@@ -44,3 +44,9 @@
 .textArea{
    color: gainsboro;
 }
+
+.transform:hover img{
+    transition: all 3s ease-in-out;
+    transform: scale(1.6);
+    border-radius: 10px;
+}

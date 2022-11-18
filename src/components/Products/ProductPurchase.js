@@ -62,12 +62,12 @@ const ProductPurchase = () => {
     }
     return (
         <div >
-            <h1 className='text-5xl text-center text-accent '>Please Purchase Now!</h1>
-            <div className="hero">
+            <h1 className='text-5xl  text-center text-accent '>Please Purchase Now!</h1>
+            <div className="hero transform">
                 <div className="hero-content grid lg:grid-cols-2 sm:grid-cols-1">
                     <div className="  ">
                     <p>Product Name:{name}</p>
-                       <img src={image} className='w-52'   alt="product" />
+                       <img src={image} className='w-52 '   alt="product" />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
                         <div className="card-body">

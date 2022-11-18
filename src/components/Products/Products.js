@@ -36,7 +36,7 @@ const Products = () => {
                     currentPost?.map(product => <SingleProduct key={product._id}
                     product={product} ></SingleProduct>)
                 }       
-               <div className='col-span-3 justify-items-center '>
+               <div className='lg:col-span-3 justify-items-center '>
                <ProductPagination currentPage={currentPage} totalPosts={products.length} postsPerPage={postsPerPage} setCurrentPage={setCurrentPage}></ProductPagination>
                </div>
             </div>

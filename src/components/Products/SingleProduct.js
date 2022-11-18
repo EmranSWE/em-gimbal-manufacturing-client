@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 const SingleProduct = ({product}) => {
     const {_id,name,image,description,minimumOrder, availableOrder,price}=product;
     return (
@@ -16,7 +16,7 @@ const SingleProduct = ({product}) => {
                     <h1>Available Order: <span className='font-bold text-xl'>{availableOrder}</span>Pcs</h1>
                     <h1 className='text-xl'>Price: <span className='font-bold'>{price}$</span></h1>
                     <div className="mx-auto  ">
-                    <Link to={`/products/${_id}`}><button className='btn btn-success text-white font-bold px-12'>Buy Now!</button></Link>  
+                    <Link to={`/products/${_id}`}><button className='btn btn-success text-white font-bold px-12'> <AiOutlineShoppingCart></AiOutlineShoppingCart> <span className='ml-3'> Buy Now!</span></button></Link>  
                     </div>
                 </div>
             </div>

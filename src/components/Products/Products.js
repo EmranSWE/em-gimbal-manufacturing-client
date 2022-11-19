@@ -27,13 +27,12 @@ const Products = () => {
         return <Loading></Loading>
       }
       const currentPost= products?.slice(firstPostIndex,lastPostIndex);
-    //   console.log(products.slice(2,5))
     return (
         <div>
             <div className='hero'>
             <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4'>
                 {
-                    currentPost?.map(product => <SingleProduct key={product._id}
+                    currentPost.map(product => <SingleProduct key={product._id}
                     product={product} ></SingleProduct>)
                 }       
                <div className='lg:col-span-3 justify-items-center '>

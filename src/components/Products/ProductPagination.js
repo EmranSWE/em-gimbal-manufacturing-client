@@ -10,8 +10,8 @@ const ProductPagination = ({totalPosts,postsPerPage,setCurrentPage,currentPage})
         <div className='py-3'>
             {
                 pages.map((page,index)=>{
-                    return <div class="btn-group ">
-                    <button key={index} onClick={()=>setCurrentPage(page)} class={page === currentPage ? "btn btn-active": "btn"}>{page}</button>
+                    return <div className="btn-group ">
+                    <button key={index} onClick={()=>setCurrentPage(page)} className={page === currentPage ? "btn btn-active": "btn"}>{page}</button>
                   </div>
                 })
             }

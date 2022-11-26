@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import bluetooth from '../../Assets/integrated bluetooth.jpg'
+import Feedback from './Feedback';
 const HomePage3 = () => {
     return (
         <div>
@@ -16,7 +17,8 @@ const HomePage3 = () => {
                 </div>
             </div>
             <div className='text-center my-5'> <button className="btn btnSecondary border-0 my-3"> <Link to='/about'>Learn More</Link></button></div>
-
+            {/*  */}
+            <Feedback></Feedback>
 
             {/*  */}
             <div className="hero min-h-screen fullGimbal">

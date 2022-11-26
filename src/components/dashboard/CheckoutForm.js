@@ -1,8 +1,11 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import React, { useEffect, useState } from 'react';
+import {  useNavigate } from 'react-router';
+import { toast } from 'react-toastify';
 
 const CheckoutForm = ({purchase}) => {
     const stripe = useStripe();
+    const navigate=useNavigate()
     const elements=useElements();
     const [success,setSuccess]=useState('');
     const [processing,setProcessing]=useState(false);
@@ -11,7 +14,7 @@ const CheckoutForm = ({purchase}) => {
     const [clientSecret,setClientSecret]=useState('');
     const {_id,price,userName,userEmail}=purchase;
     useEffect(()=>{
-        fetch('https://infinite-waters-78594.herokuapp.com/create-payment-intent',{
+        fetch('http://localhost:5000/create-payment-intent',{
             method:"POST",
             headers:{
                 'content-type':"application/json",
@@ -64,8 +67,12 @@ const CheckoutForm = ({purchase}) => {
       else{
         setCardError('');
         
+        
         setTransactionId(paymentIntent.id)
-        setSuccess('Congrats! Your payment is confirmed')
+        setSuccess('Congrats! Your payment is confirmed');
+        toast.success(` Payment Success!`)
+        // navigate('/dashboard')
+        
         // store payment
         const payment ={
             product:_id,
@@ -74,7 +81,7 @@ const CheckoutForm = ({purchase}) => {
             userEmail:userEmail,
             price:price
         }
-        fetch(`https://infinite-waters-78594.herokuapp.com/purchase/${_id}`,{
+        fetch(`http://localhost:5000/purchase/${_id}`,{
             method:"PATCH",
             headers:{
                 'content-type':"application/json",

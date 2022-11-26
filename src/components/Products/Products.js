@@ -11,7 +11,7 @@ const Products = () => {
     const {data:products,isLoading}=useQuery({
         queryKey: ['product'],
         queryFn: () =>
-          fetch('https://infinite-waters-78594.herokuapp.com/products',{
+          fetch('http://localhost:5000/products',{
               headers:{
                   authorization: `Bearer ${localStorage.getItem('accessToken')}`
               }
@@ -26,6 +26,7 @@ const Products = () => {
       if(isLoading){
         return <Loading></Loading>
       }
+
       const currentPost= products?.slice(firstPostIndex,lastPostIndex);
     return (
         <div>

@@ -30,7 +30,7 @@ const AddProduct = () => {
                     price:data.price
                 }
                 //send to your database
-                fetch('https://infinite-waters-78594.herokuapp.com/products',{
+                fetch('http://localhost:5000/products',{
                     method:"POST",
                     headers:{
                         'content-type': 'application/json',
@@ -57,10 +57,9 @@ const AddProduct = () => {
     return (
        <div>
         <div className='hero'>
-        <div className='border-l-4 border-indigo-500 '>
-           
+        <div className='border-l-4 border-indigo-500'>   
             <div className='p-6'>
-            <h2 className='text-3xl text-accent'>Add a new Doctor</h2>
+            <h2 className='text-3xl text-accent'>Add a new Product</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label className="label">
                     <span className="label-text">Name</span>

@@ -7,7 +7,7 @@ const Users = () => {
     const { isLoading,  data:users,refetch} = useQuery({
         queryKey: ['users'],
         queryFn: () =>
-          fetch('https://infinite-waters-78594.herokuapp.com/users',{
+          fetch('http://localhost:5000/users',{
             method:"GET",
             headers:{
                 'authorization':`Bearer ${localStorage.getItem('accessToken')}`

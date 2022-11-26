@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Em Gimbal Manufacturer Website
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Feature of Gimbal Manufacturer Website
+#### Pages
+- Home
+- About Us
+- Service
+- Shop
+- Contacts
+- Dashboard
+- Login/ Log out
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Feature 
+- User can buy a product
+- User can see their Dashboard
+- User can see their product status, payment status
+- User can payment using Stripe (If paid, then see the transactionId)
+- User can view their profile
+- User can review the product
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Admin can view all customer product status
+- Admin can make an another Admin
+- Admin can update product
 
-### `npm test`
+- User will get an email after their payment, and also after their checkout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Documentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Documentation](https://linktodocumentation)
 
-### `npm run eject`
+## Color Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
+| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
+| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
+| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Live Demo](https://em-manufacturing.web.app/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Used By
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is used by the following companies:
 
-### Code Splitting
+- Company 1
+- Company 2
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Running Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run tests, run the following command
 
-### Making a Progressive Web App
+```bash
+  npm run test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For support, email me mdemran.swe@gmail.com or visite my website [Portfolio](https://emran-portfolio.web.app/)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are always welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Feedback
+
+If you have any feedback, please reach out me to
+mdemran.swe@gmail.com
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://emran-portfolio.web.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emran2k18/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/EmranSwe)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

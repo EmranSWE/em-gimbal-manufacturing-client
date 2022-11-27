@@ -51,7 +51,7 @@ EM GIMBAL MANUFACTURER:-
 
 ## Documentation
 
-[Documentation](https://github.com/EmranSWE/easy-doctors-portal-client/blob/main/README.md)
+[Documentation](https://github.com/EmranSWE//em-gimbal-manufacturing-client/blob/main/README.md)
 
 ## Screenshot of the application (Demo)
 ### Desktop / Laptop

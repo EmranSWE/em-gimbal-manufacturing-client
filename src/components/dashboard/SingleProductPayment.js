@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const SingleProductPayment = ({index,payment,refetch}) => {
     
-    const {price,product,shipment, userEmail,userName}=payment;
+    const {_id,price,product,shipment, userEmail,userName}=payment;
     const makeShipment =()=>{
     fetch(`http://localhost:5000/purchase/${product}`,{
         method:"PUT",
@@ -14,14 +14,30 @@ const SingleProductPayment = ({index,payment,refetch}) => {
     })
     .then(res => {
         if(res.status === 403){
-            toast.error("Fail to Make an Admin")
+            toast.error("Fail to Make Shipment")
         }
         return  res.json()})
     .then(data =>
         {
+      
             if(data.modifiedCount > 0){
-                refetch();
-                toast.success("Successfully Shipment The product");
+                fetch(`http://localhost:5000/payments/${_id}`,{
+                    method:"PUT",
+                    headers:{
+                        'authorization':`Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                })
+                .then(res => {
+                    if(res.status === 403){
+                        toast.error("Fail to Make Shipment")
+                    }
+                    return  res.json()})
+                    .then(data => {
+                        if(data.modifiedCount>0){
+                        refetch();
+                        toast.success('Product Shipment')
+                        }
+                    })    
                 
             }     
     })

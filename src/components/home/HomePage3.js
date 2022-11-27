@@ -18,6 +18,7 @@ const HomePage3 = () => {
             </div>
             <div className='text-center my-5'> <button className="btn btnSecondary border-0 my-3"> <Link to='/about'>Learn More</Link></button></div>
             {/*  */}
+            <h1 className='text-5xl  text-center my-6 font-bold animate__animated  animate__slower animate__backInUp'> Customer Feedback</h1>
             <Feedback></Feedback>
 
             {/*  */}

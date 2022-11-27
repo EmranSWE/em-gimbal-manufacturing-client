@@ -88,23 +88,29 @@ const ProductPurchase = () => {
                                 <label className="label">
                                     <span className="label-text">Your Address:</span>
                                 </label>
-                                <input type="text" name='address' placeholder="address" className="input input-bordered" />
+                                <input type="text" name='address' required placeholder="address" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Your Phone</span>
                                 </label>
-                                <input type="phone" name='phone' placeholder="Your phone number" className="input input-bordered" />
+                                <input type="phone" name='phone' required placeholder="Your phone number" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Product Quantity</span>
+                                    <span className="label-text">Product Price</span>
                                 </label>
-                                <input type="text" placeholder={minimumOrder}  name='quantity' required  className="input input-bordered" />
+                                <input type="text" value={`${price}$ `} readOnly name='price' required  className="input input-bordered" />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Purchase Quantity</span>
+                                </label>
+                                <input type="text" placeholder={`Minimum Order: ${minimumOrder}`}  name='quantity' required  className="input input-bordered" />
                             </div>
 
                             <div className="form-control mt-6">
-                                <input type='submit' value='Place Order'  className="btn btn-accent"/>
+                                <input type='submit' value='Place Order'  className="btn btn-accent text-white"/>
                             </div>
                             </form>                         
                         </div>

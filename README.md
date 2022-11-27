@@ -148,7 +148,7 @@ thanks of gratitude to different technology relevent blog writter and stack over
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) This project is licensed under the MIT License - see the `LICENSE.md `file for details
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) This project is licensed under the MIT License - see the `LICENSE.md `file for detailss
 
 
 

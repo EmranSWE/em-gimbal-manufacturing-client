@@ -30,7 +30,7 @@ const AddProduct = () => {
                     price:data.price
                 }
                 //send to your database
-                fetch('https://infinite-waters-78594.herokuapp.com/products',{
+                fetch('http://localhost:5000/products',{
                     method:"POST",
                     headers:{
                         'content-type': 'application/json',

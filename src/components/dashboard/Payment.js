@@ -8,7 +8,7 @@ import CheckoutForm from './CheckoutForm';
 const stripePromise = loadStripe('pk_test_51M05zgFXEoII0xDNZIsXUD4aExT2gPuSHsMbldhAJxxzsC3vPKQx45W9cRSNqZmMEQLohaUWEhfUzYC8GoOLkcG700tqHnQxAd');
 const Payment = () => {
     const { id } = useParams();
-    const url = `https://infinite-waters-78594.herokuapp.com/purchase/${id}`
+    const url = `http://localhost:5000/purchase/${id}`
     const { data: purchase, isLoading } = useQuery(['purchase', id], () => fetch(url, {
         method: 'GET',
         headers: {

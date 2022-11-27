@@ -30,7 +30,7 @@ const MyReview = () => {
         }
 
         //send to your database
-        fetch('https://infinite-waters-78594.herokuapp.com/feedback', {
+        fetch('http://localhost:5000/feedback', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',

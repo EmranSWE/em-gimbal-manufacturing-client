@@ -6,7 +6,7 @@ import ManageSingleProducts from './ManageSingleProducts';
 
 const ManageProducts = () => {
     const [deletingProduct,setDeletingProduct]=useState(null)
-    const {data:products,isLoading,refetch}=useQuery('products',()=>fetch(`https://infinite-waters-78594.herokuapp.com/products`,{
+    const {data:products,isLoading,refetch}=useQuery('products',()=>fetch(`http://localhost:5000/products`,{
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

@@ -5,7 +5,7 @@ import SingleProductPayment from './SingleProductPayment';
 
 const AllProducts = () => {
    
-    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://infinite-waters-78594.herokuapp.com/payments`,{
+    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`http://localhost:5000/payments`,{
         method:"GET",
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

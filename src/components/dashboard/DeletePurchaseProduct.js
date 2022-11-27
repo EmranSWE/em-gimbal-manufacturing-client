@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const DeletePurchaseProduct = ({setDeletingPurchase,deletingPurchase,refetch}) => {
     const handleDelete = () =>{
-        fetch(`https://infinite-waters-78594.herokuapp.com/purchase/${deletingPurchase}`,{
+        fetch(`http://localhost:5000/purchase/${deletingPurchase}`,{
             method:"DELETE",
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

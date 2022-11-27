@@ -14,7 +14,7 @@ const CheckoutForm = ({purchase}) => {
     const [clientSecret,setClientSecret]=useState('');
     const {_id,price,userName,userEmail}=purchase;
     useEffect(()=>{
-        fetch('https://infinite-waters-78594.herokuapp.com/create-payment-intent',{
+        fetch('http://localhost:5000/create-payment-intent',{
             method:"POST",
             headers:{
                 'content-type':"application/json",
@@ -81,7 +81,7 @@ const CheckoutForm = ({purchase}) => {
             userEmail:userEmail,
             price:price
         }
-        fetch(`https://infinite-waters-78594.herokuapp.com/purchase/${_id}`,{
+        fetch(`http://localhost:5000/purchase/${_id}`,{
             method:"PATCH",
             headers:{
                 'content-type':"application/json",

@@ -11,7 +11,7 @@ const ProductPurchase = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`https://infinite-waters-78594.herokuapp.com/products/${id}`)
+        fetch(`http://localhost:5000/products/${id}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [id])
@@ -42,7 +42,7 @@ const ProductPurchase = () => {
             address:address,
         }
 
-        fetch('https://infinite-waters-78594.herokuapp.com/purchase', {
+        fetch('http://localhost:5000/purchase', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

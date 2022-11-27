@@ -16,21 +16,7 @@ EM GIMBAL MANUFACTURER:-
 [Live Demo](https://em-manufacturing.web.app/)
 
 ## Technology Stack
-This is where you want to demonstrate the technologies you used in this project and provide any links.
-* HTML5
-* CSS3
-* TailwindCSS
-* DaisyUi
-* JavaScript
-* React
-* React Router
-* Firebase
-* Json Web Token For verify
-* Nodemailer
-* sendgrid
-* Digital payment: Stripe
-* MongoDb Databases
-* Heroku 
+
 | Technology | Description                               |
 |------------|-------------------------------------------|
 | Front-End    | HTML5, CSS3, TailwindCSS ,DaisyUi,JavaScript ,React, ReactRouter|   

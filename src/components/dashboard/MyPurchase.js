@@ -15,7 +15,7 @@ const MyPurchase = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
     
-    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`http://localhost:5000/purchase?user=${user.email}`,{
+    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://infinite-waters-78594.herokuapp.com/purchase?user=${user.email}`,{
         method:"GET",
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

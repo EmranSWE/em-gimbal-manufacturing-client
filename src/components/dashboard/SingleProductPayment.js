@@ -6,7 +6,7 @@ const SingleProductPayment = ({index,payment,refetch}) => {
     
     const {_id,price,product,shipment, userEmail,userName}=payment;
     const makeShipment =()=>{
-    fetch(`http://localhost:5000/purchase/${product}`,{
+    fetch(`https://infinite-waters-78594.herokuapp.com/purchase/${product}`,{
         method:"PUT",
         headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -21,7 +21,7 @@ const SingleProductPayment = ({index,payment,refetch}) => {
         {
       
             if(data.modifiedCount > 0){
-                fetch(`http://localhost:5000/payments/${_id}`,{
+                fetch(`https://infinite-waters-78594.herokuapp.com/payments/${_id}`,{
                     method:"PUT",
                     headers:{
                         'authorization':`Bearer ${localStorage.getItem('accessToken')}`

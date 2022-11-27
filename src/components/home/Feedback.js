@@ -11,7 +11,7 @@ const Feedback = () => {
     const { isLoading,  data:feedback} = useQuery({
         queryKey: ['feedback'],
         queryFn: () =>
-          fetch('http://localhost:5000/feedback',{
+          fetch('https://infinite-waters-78594.herokuapp.com/feedback',{
             method:"GET",
             headers:{
                 'authorization':`Bearer ${localStorage.getItem('accessToken')}`

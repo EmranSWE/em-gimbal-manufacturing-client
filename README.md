@@ -57,7 +57,7 @@ EM GIMBAL MANUFACTURER:-
 ### Desktop / Laptop
 
 #### Home
-![App Screenshot](https://i.ibb.co/qn1b9ZS/screencapture-em-manufacturing-web-app-home-2022-11-27-19-19-22-1.png)
+![App Screenshot](https://i.ibb.co/YL8Y9Gx/screencapture-em-manufacturing-web-app-2022-11-27-19-55-56.png)
 
 #### About Us
 ![App Screenshot](https://i.ibb.co/FHS77rg/screencapture-em-manufacturing-web-app-about-2022-11-27-19-02-59.png)

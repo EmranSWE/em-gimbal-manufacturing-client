@@ -15,6 +15,10 @@ EM gimbal manufaturer is a multi-functional responsive web application. Customer
 EM GIMBAL MANUFACTURER:-
 [Live Demo](https://em-manufacturing.web.app/)
 
+## Documentation
+
+[Documentation](https://drive.google.com/file/d/1lCBJBdFBbbN-AO1szdUQkhqkeY4DN87X/view?usp=sharing)
+
 ## Technology Stack
 
 | Technology | Description                               |
@@ -49,9 +53,7 @@ EM GIMBAL MANUFACTURER:-
 - And admin can add a new product: Dashboard> Add Product
 - An admin can manage Product: Dashboard> Manage Product
 
-## Documentation
 
-[Documentation](https://github.com/EmranSWE//em-gimbal-manufacturing-client/blob/main/README.md)
 
 ## Screenshot of the application (Demo)
 ### Desktop / Laptop

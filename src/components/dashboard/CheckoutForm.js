@@ -14,7 +14,7 @@ const CheckoutForm = ({purchase}) => {
     const [clientSecret,setClientSecret]=useState('');
     const {_id,price,userName,userEmail}=purchase;
     useEffect(()=>{
-        fetch('http://localhost:5000/create-payment-intent',{
+        fetch('https://em-gimbal-server-side.onrender.com/create-payment-intent',{
             method:"POST",
             headers:{
                 'content-type':"application/json",
@@ -81,7 +81,7 @@ const CheckoutForm = ({purchase}) => {
             userEmail:userEmail,
             price:price
         }
-        fetch(`http://localhost:5000/purchase/${_id}`,{
+        fetch(`https://em-gimbal-server-side.onrender.com/purchase/${_id}`,{
             method:"PATCH",
             headers:{
                 'content-type':"application/json",

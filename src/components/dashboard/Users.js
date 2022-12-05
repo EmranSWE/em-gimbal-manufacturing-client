@@ -7,7 +7,7 @@ const Users = () => {
     const { isLoading,  data:users,refetch} = useQuery({
         queryKey: ['users'],
         queryFn: () =>
-          fetch('http://localhost:5000/users',{
+          fetch('https://em-gimbal-server-side.onrender.com/users',{
             method:"GET",
             headers:{
                 'authorization':`Bearer ${localStorage.getItem('accessToken')}`

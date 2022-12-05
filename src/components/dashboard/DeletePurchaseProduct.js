@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const DeletePurchaseProduct = ({setDeletingPurchase,deletingPurchase,refetch}) => {
     const handleDelete = () =>{
-        fetch(`http://localhost:5000/purchase/${deletingPurchase}`,{
+        fetch(`https://em-gimbal-server-side.onrender.com/purchase/${deletingPurchase}`,{
             method:"DELETE",
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

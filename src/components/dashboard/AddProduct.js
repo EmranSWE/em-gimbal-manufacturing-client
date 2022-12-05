@@ -30,7 +30,7 @@ const AddProduct = () => {
                     price:data.price
                 }
                 //send to your database
-                fetch('http://localhost:5000/products',{
+                fetch('https://em-gimbal-server-side.onrender.com/products',{
                     method:"POST",
                     headers:{
                         'content-type': 'application/json',

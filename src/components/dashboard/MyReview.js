@@ -30,7 +30,7 @@ const MyReview = () => {
         }
 
         //send to your database
-        fetch('http://localhost:5000/feedback', {
+        fetch('https://em-gimbal-server-side.onrender.com/feedback', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',

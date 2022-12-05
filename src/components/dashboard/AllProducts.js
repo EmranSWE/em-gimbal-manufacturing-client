@@ -5,7 +5,7 @@ import SingleProductPayment from './SingleProductPayment';
 
 const AllProducts = () => {
    
-    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`http://localhost:5000/payments`,{
+    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://em-gimbal-server-side.onrender.com/payments`,{
         method:"GET",
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

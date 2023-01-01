@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const AllUsers = ({user,index,refetch}) => {
 const {email,role}=user;
 const makeAdmin =()=>{
-    fetch(`https://em-gimbal-server-side.onrender.com/users/admin/${email}`,{
+    fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/users/admin/${email}`,{
         method:"PUT",
         headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`

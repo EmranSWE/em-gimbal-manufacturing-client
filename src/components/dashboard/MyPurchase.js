@@ -16,7 +16,7 @@ const MyPurchase = () => {
     const navigate = useNavigate();
     
     
-    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://em-gimbal-server-side.onrender.com/purchase?user=${user.email}`,{
+    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/purchase?user=${user.email}`,{
         method:"GET",
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

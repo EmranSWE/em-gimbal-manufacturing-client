@@ -6,7 +6,7 @@ import ManageSingleProducts from './ManageSingleProducts';
 
 const ManageProducts = () => {
     const [deletingProduct,setDeletingProduct]=useState(null)
-    const {data:products,isLoading,refetch}=useQuery('products',()=>fetch(`https://em-gimbal-server-side.onrender.com/products`,{
+    const {data:products,isLoading,refetch}=useQuery('products',()=>fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/products`,{
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

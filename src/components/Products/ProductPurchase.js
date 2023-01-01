@@ -11,7 +11,7 @@ const ProductPurchase = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`https://em-gimbal-server-side.onrender.com/products/${id}`)
+        fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/products/${id}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [id])
@@ -42,7 +42,7 @@ const ProductPurchase = () => {
             address:address,
         }
 
-        fetch('https://em-gimbal-server-side.onrender.com/purchase', {
+        fetch('https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/purchase', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

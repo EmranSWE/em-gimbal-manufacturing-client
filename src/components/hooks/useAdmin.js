@@ -7,7 +7,7 @@ const useAdmin = user =>{
         const email = user?.email;
         if(email){
             if(email){
-                fetch(`https://em-gimbal-server-side.onrender.com/admin/${email}`,{
+                fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/admin/${email}`,{
                 method:"Get",
                 headers:{
                     'content-type':"application/json",

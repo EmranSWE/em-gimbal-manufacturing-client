@@ -7,7 +7,7 @@ const useToken = user =>{
         const email=user?.user?.email;
         const currentUser= {email: email};
         if(email){
-            fetch(`https://em-gimbal-server-side.onrender.com/users/${email}`,{
+            fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/users/${email}`,{
             method:"PUT",
             headers:{
                 'content-type':"application/json"

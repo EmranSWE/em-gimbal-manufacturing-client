@@ -11,7 +11,7 @@ const Products = () => {
     const {data:products,isLoading}=useQuery({
         queryKey: ['product'],
         queryFn: () =>
-          fetch('https://em-gimbal-server-side.onrender.com/products',{
+          fetch('https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/products',{
               headers:{
                   authorization: `Bearer ${localStorage.getItem('accessToken')}`
               }

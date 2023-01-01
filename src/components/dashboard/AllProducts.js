@@ -5,7 +5,7 @@ import SingleProductPayment from './SingleProductPayment';
 
 const AllProducts = () => {
    
-    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://em-gimbal-server-side.onrender.com/payments`,{
+    const {data:purchase,isLoading,refetch}=useQuery('purchase',()=>fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/payments`,{
         method:"GET",
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

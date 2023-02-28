@@ -30,7 +30,7 @@ const AddProduct = () => {
                     price:data.price
                 }
                 //send to your database
-                fetch('https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/products',{
+                fetch('https://em-gimbal-server-side.onrender.com/products',{
                     method:"POST",
                     headers:{
                         'content-type': 'application/json',

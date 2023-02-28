@@ -6,7 +6,7 @@ const SingleProductPayment = ({index,payment,refetch}) => {
     
     const {_id,price,product,shipment, userEmail,userName}=payment;
     const makeShipment =()=>{
-    fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/purchase/${product}`,{
+    fetch(`https://em-gimbal-server-side.onrender.com/purchase/${product}`,{
         method:"PUT",
         headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -21,7 +21,7 @@ const SingleProductPayment = ({index,payment,refetch}) => {
         {
       
             if(data.modifiedCount > 0){
-                fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/payments/${_id}`,{
+                fetch(`https://em-gimbal-server-side.onrender.com/payments/${_id}`,{
                     method:"PUT",
                     headers:{
                         'authorization':`Bearer ${localStorage.getItem('accessToken')}`

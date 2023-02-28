@@ -5,7 +5,7 @@ const DeleteConfirmedModal = ({deletingProduct,refetch,setDeletingProduct}) => {
     const {name,_id}=deletingProduct;
 
     const handleDelete = () =>{
-        fetch(`https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/products/${_id}`,{
+        fetch(`https://em-gimbal-server-side.onrender.com/products/${_id}`,{
             method:"DELETE",
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

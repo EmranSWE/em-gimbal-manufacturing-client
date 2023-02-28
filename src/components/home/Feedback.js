@@ -11,7 +11,7 @@ const Feedback = () => {
     const { isLoading,  data:feedback} = useQuery({
         queryKey: ['feedback'],
         queryFn: () =>
-          fetch('https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/feedback',{
+          fetch('https://em-gimbal-server-side.onrender.com/feedback',{
             method:"GET",
             headers:{
                 'authorization':`Bearer ${localStorage.getItem('accessToken')}`

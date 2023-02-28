@@ -30,7 +30,7 @@ const MyReview = () => {
         }
 
         //send to your database
-        fetch('https://em-gimbal-manufacturing-aksbb.ondigitalocean.app/feedback', {
+        fetch('https://em-gimbal-server-side.onrender.com/feedback', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',
